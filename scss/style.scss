@@ -49,8 +49,6 @@
 
 ---------------------------------------------------------------- */
 
-
-
 // Initialize
 @import "variables.scss";
 
@@ -60,6 +58,9 @@
 
 // Shortcodes
 @import "shortcodes.scss";
+
+// Google Fonts
+@import "fonts.scss";
 
 // responsive
 @import "responsive.scss";
