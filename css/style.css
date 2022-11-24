@@ -1233,7 +1233,7 @@ a:hover, span:hover {
   border-bottom: 2px solid transparent;
   z-index: 999;
   min-height: 80px;
-  background-color: white;
+  background-color: #f9f9f7;
   color: black;
 }
 .navbar.bg-lit.nav-scroll {
@@ -1247,8 +1247,8 @@ a:hover, span:hover {
   display: none;
 }
 .navbar.bg-lit .container {
-  background-color: #fff;
   padding-right: 30px;
+  background-color: #f9f9f7;
   padding-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -3922,10 +3922,6 @@ html, body {
   height: 0.7em;
 }
 
-.bold {
-  text-transform: uppercase;
-}
-
 .big {
   font-weight: 800;
 }
@@ -4450,6 +4446,29 @@ html, body {
     margin-right: 15px;
   }
 }
+.dark {
+  background: #121217;
+  color: #fff;
+}
+.dark p {
+  color: #babbbb;
+}
+.dark h1, .dark h2, .dark h3, .dark h4 {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: "Catamaran", sans-serif;
+}
+.dark .bg-gray {
+  background: #18181d;
+}
+.dark .blog .item .cont .info span {
+  background: #18181d;
+}
+.dark #ui-datepicker-div {
+  background: #18181d;
+}
+
 /* ====================== [ End Responsive ] ====================== */
 
 /*# sourceMappingURL=style.css.map */

@@ -525,4 +525,32 @@
     }
 }
 
+
+.dark{
+    background: #121217;
+    color: #fff;
+    
+    p {
+      color: #babbbb;
+    }
+
+    h1, h2, h3, h4 {
+      margin: 0;
+      line-height: 1.4;
+      font-weight: 500;
+      font-family: "Catamaran",sans-serif;
+    }
+
+    .bg-gray{
+      background: #18181d;
+    }
+
+    .blog .item .cont  .info span{
+      background: #18181d;
+    }
+
+    #ui-datepicker-div{
+      background: #18181d;
+    }
+  }
 /* ====================== [ End Responsive ] ====================== */
