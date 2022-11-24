@@ -1248,6 +1248,7 @@ a:hover, span:hover {
 }
 .navbar.bg-lit .container {
   background-color: #fff;
+  padding-right: 30px;
   padding-left: 30px;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -3766,6 +3767,7 @@ body {
 html, body {
   height: 100%;
   min-height: 18em;
+  overflow-x: hidden !important;
 }
 
 .frontend-side {
