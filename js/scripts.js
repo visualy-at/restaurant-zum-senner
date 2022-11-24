@@ -19,23 +19,23 @@ $(function () {
 
     var wind = $(window);
 
-    wind.on("scroll", function () {
+    // wind.on("scroll", function () {
 
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar"),
-            logo = $(".navbar.change .logo> img");
+    //     var bodyScroll = wind.scrollTop(),
+    //         navbar = $(".navbar"),
+    //         logo = $(".navbar.change .logo> img");
 
-        if (bodyScroll > 300) {
+    //     if (bodyScroll > 300) {
 
-            navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-dark.png');
+    //         navbar.addClass("nav-scroll");
+    //         logo.attr('src', 'img/logo-dark.png');
 
-        } else {
+    //     } else {
 
-            navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.png');
-        }
-    });
+    //         navbar.removeClass("nav-scroll");
+    //         logo.attr('src', 'img/logo-light.png');
+    //     }
+    // });
 
     $('.navbar .search .icon').on('click', function () {
         $(".navbar .search .search-form").fadeIn();
@@ -82,7 +82,9 @@ $(function () {
         speed: 1000,
         loop: true,
         effect: "fade",
-
+        autoplay: {
+            delay: 5000,
+        },
         pagination: {
             el: '.slid-scrn .swiper-pagination',
             clickable: true,
