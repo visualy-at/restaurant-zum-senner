@@ -4469,6 +4469,12 @@ html, body {
   background: #18181d;
 }
 
+@media screen and (max-width: 991px) {
+  .order-1-mobile {
+    order: -1;
+  }
+}
+
 /* ====================== [ End Responsive ] ====================== */
 
 /*# sourceMappingURL=style.css.map */

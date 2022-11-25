@@ -553,4 +553,10 @@
       background: #18181d;
     }
   }
+
+  .order-1-mobile {
+    @media screen and (max-width: $desk-md-screen) {
+        order: -1;
+    }
+  }
 /* ====================== [ End Responsive ] ====================== */
