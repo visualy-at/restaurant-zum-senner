@@ -1,0 +1,433 @@
+
+
+
+/* ====================== [ Start Preloader ] ====================== */
+
+.pace {
+	pointer-events: none;
+	user-select: none;
+	z-index: 99999999999999;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+	border: 0px;
+	height: 1px;
+	overflow: hidden;
+	background: rgba(255,255,255,.05);
+	transition: all 1s;
+
+	.pace-progress {
+		transform: translate3d(0, 0, 0);
+		max-width: 300px;
+		position: fixed;
+		z-index: 99999999999999;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 100%;
+		height: 100%;
+		width: 100%;
+		background: $main-color;
+	}
+}
+
+.pace.pace-inactive {
+	width: 100vw;
+	opacity: 0;
+
+	.pace-progress{
+		max-width: 100vw;
+	}
+}
+
+#preloader{
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+	position:fixed;
+	z-index: 9999999;
+
+	&:after, &:before{
+		content: '';
+		position: fixed;
+		left: 0;
+		height: 50%;
+		width: 100%;
+		background: #252531;
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+	}
+
+	&:before{
+		top: 0;
+	}
+
+	&:after{
+		bottom: 0;
+	}
+
+	&.isdone{
+		visibility: hidden;
+		transition-delay: 1.5s;
+		
+		&:after, &:before{
+			height: 0;
+			transition: all .7s cubic-bezier(1, 0, 0.55, 1);
+			transition-delay: 1s;
+		}
+	}
+}
+
+.loading-text {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	position: absolute;
+	top: calc(50% - 30px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $main-color;
+	font-family: 'Teko', sans-serif;
+	z-index: 9999;
+
+	&.isdone{
+		top: 50%;
+		opacity: 0;
+		transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
+		transition-delay: .5s;
+	}
+}
+
+/* ====================== [ End Preloader ] ====================== */
+
+
+/* ====================== [ Start Text Animation & Images ] ====================== */
+
+.splitting.animated .char {
+	animation: fadeInUp .4s cubic-bezier(.3, 0, .7, 1) both;
+	animation-delay: calc(30ms * var(--char-index));
+}
+
+.splitting .whitespace{
+	width: 5px;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.splitting.txt.animated .char {
+	animation: fadeIn .3s cubic-bezier(.3, 0, .7, 1) both;
+	animation-delay: calc(10ms * var(--char-index));
+}
+
+.splitting.txt .whitespace{
+	width: 5px;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
+}
+
+.imago{
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	transition: all .8s;
+	transition-delay: .3s;
+
+	&.animated{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}	
+}
+
+/* ====================== [ End Text Animation & Images ] ====================== */
+
+
+/* ====================== [ Start Cursor Style ] ====================== */
+
+body{
+	cursor: none;
+}
+
+.mouse-cursor { 
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	border-radius: 50%;
+	transform: translateZ(0);
+	visibility: hidden;
+}
+.cursor-inner { 
+	margin-left: 2px; 
+	margin-top: 2px;
+	width: 6px; 
+	height: 6px; 
+	z-index: 10000001;
+	background-color: $main-color;
+	transition: width .3s ease-in-out,
+				height .3s ease-in-out,
+				margin .3s ease-in-out,
+				opacity .3s ease-in-out;
+}
+.cursor-inner.cursor-hover { 
+	margin-left: -40px;
+	margin-top: -40px;
+	width: 80px;
+	height: 80px;
+	background-color: $main-color;
+	opacity: .3;
+}
+.cursor-outer { 
+	margin-left: -15px;
+	margin-top: -15px; 
+	width: 40px;
+	height: 40px; 
+	border: 1px solid $main-color;
+	box-sizing: border-box;
+	z-index: 10000000;
+	opacity: .5;
+	transition: all .08s ease-out;
+
+	&.cursor-hover{
+		opacity: 0;
+	}
+}
+
+/* ====================== [ End Cursor Style ] ====================== */
+
+
+/* ====================== [ Start progress-wrap ] ====================== */
+
+.progress-wrap {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	height: 44px;
+	width: 44px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	z-index: 100;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
+    transition: all 400ms linear;
+}
+
+.progress-wrap.active-progress {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.progress-wrap::after {
+	position: absolute;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f077';
+	text-align: center;
+	line-height: 44px;
+	font-size: 13px;
+	font-weight: 900;
+	color: $main-color;
+	left: 0;
+	top: 0;
+	height: 44px;
+	width: 44px;
+	cursor: pointer;
+	display: block;
+	z-index: 1;
+    transition: all 400ms linear;
+}
+
+.progress-wrap svg path { 
+	fill: none; 
+}
+
+.progress-wrap svg.progress-circle path {
+	stroke: $main-color;
+	stroke-width: 4;
+	box-sizing: border-box;
+    transition: all 400ms linear;
+}
+
+/* ====================== [ End progress-wrap ] ====================== */
+
+
+
+
+
+
+// Split Screen Cafe & Restaurant
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+@media (min-width: 500px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+}
+html, body {
+  height: 100%;
+  min-height: 18em;
+  overflow-x: hidden !important;
+}
+
+.frontend-side {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+}
+
+.uiux-side {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-post-its.png");
+}
+
+.split-pane {
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50%;
+  min-height: 9em;
+  font-size: 2em;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+	font-weight:300;
+;
+}
+@media(min-width: 500px) {
+  .split-pane {
+    padding-top: 2em;
+    height: 100%;
+  }
+}
+.split-pane > div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.split-pane > div .text-content {
+  line-height: 1.6em;
+  margin-bottom: 1em;
+}
+.split-pane > div .text-content .big {
+  font-size: 2em;
+}
+.split-pane > div img {
+  height: 1.3em;
+}
+@media (max-width: 500px) {
+  .split-pane > div img {
+    display:none;
+  }
+}
+.split-pane button, .split-pane a.button {
+  font-family: 'Open Sans', sans-serif;
+	font-weight:800;
+  background: none;
+  border: 1px solid white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.7em;
+  font-size: 0.5em;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+	cursor: pointer;
+}
+.split-pane button:hover, .split-pane a.button:hover {
+  text-decoration: none;
+  background-color: white;
+  border-color: white;
+	cursor: pointer;
+}
+.uiux-side.split-pane button:hover, .split-pane a.button:hover {
+  color: violet;
+}
+.frontend-side.split-pane button:hover, .split-pane a.button:hover {
+  color: blue;
+}
+
+#split-pane-or {
+  font-size: 2em;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 925px) {
+  #split-pane-or {
+    top:15%;
+  }
+}
+#split-pane-or > div img {
+  height: 2.5em;
+}
+@media (max-width: 500px) {
+  #split-pane-or {
+    position: absolute;
+    top: 50px;
+  }
+  #split-pane-or > div img {
+    height:2em;
+  }
+}
+@media(min-width: 500px) {
+  #split-pane-or {
+    font-size: 3em;
+  }
+}
+.big {
+  font-size: 2em;
+}
+
+#slogan {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  vertical-align: baseline;
+  top: 0.5em;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+}
+@media(min-width: 500px) {
+  #slogan {
+    top: 5%;
+    font-size: 1.8em;
+  }
+}
+#slogan img {
+  height: 0.7em;
+}
+.bold {
+	// text-transform:uppercase;
+}
+.big {
+	font-weight:800;
+}

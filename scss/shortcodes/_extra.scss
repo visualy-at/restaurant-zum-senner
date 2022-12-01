@@ -269,8 +269,7 @@ body{
 
 
 
-// Split Screen Cafe & Restaurant
-
+// 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
 
 @media (min-width: 500px) {
@@ -281,7 +280,6 @@ body{
 html, body {
   height: 100%;
   min-height: 18em;
-  overflow-x: hidden !important;
 }
 
 .frontend-side {
@@ -426,7 +424,7 @@ html, body {
   height: 0.7em;
 }
 .bold {
-	// text-transform:uppercase;
+	text-transform:uppercase;
 }
 .big {
 	font-weight:800;
