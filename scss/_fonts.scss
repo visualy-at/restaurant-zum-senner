@@ -1,4 +1,40 @@
 @font-face {
   font-family: "Pinyon Script";
-  src: url("myfont.woff2") format("woff2"), url("myfont.woff") format("woff");
+  src: url("../fonts/pinyonscript/PinyonScript-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-weight: bold;
+  src: url("../fonts/amatic-sc/AmaticSC-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  font-weight: normal;
+  src: url("../fonts/amatic-sc/AmaticSC-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: lighter;
+  src: url("../fonts/poppins/Poppins-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: normal;
+  src: url("../fonts/poppins/Poppins-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: url("../fonts/poppins/Poppins-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: bolder;
+  src: url("../fonts/poppins/Poppins-Bold.woff2") format("woff2");
 }
