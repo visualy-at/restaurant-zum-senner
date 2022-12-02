@@ -48,7 +48,6 @@
 
 ---------------------------------------------------------------- */
 /* ====================== [ Start Typography  ] ====================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
 * {
   margin: 0;
   padding: 0;
@@ -3764,7 +3763,8 @@ body {
     width: 50%;
   }
 }
-html, body {
+html,
+body {
   height: 100%;
   min-height: 18em;
 }
@@ -3823,7 +3823,8 @@ html, body {
     display: none;
   }
 }
-.split-pane button, .split-pane a.button {
+.split-pane button,
+.split-pane a.button {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   background: none;
@@ -3844,18 +3845,21 @@ html, body {
   cursor: pointer;
 }
 
-.split-pane button:hover, .split-pane a.button:hover {
+.split-pane button:hover,
+.split-pane a.button:hover {
   text-decoration: none;
   background-color: white;
   border-color: white;
   cursor: pointer;
 }
 
-.uiux-side.split-pane button:hover, .split-pane a.button:hover {
+.uiux-side.split-pane button:hover,
+.split-pane a.button:hover {
   color: violet;
 }
 
-.frontend-side.split-pane button:hover, .split-pane a.button:hover {
+.frontend-side.split-pane button:hover,
+.split-pane a.button:hover {
   color: blue;
 }
 
