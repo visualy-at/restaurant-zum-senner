@@ -4077,6 +4077,21 @@ html, body {
   font-weight: bolder;
   src: url("../fonts/poppins/Poppins-Bold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: url("../fonts/opensans/OpenSans-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  src: url("../fonts/opensans/OpenSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 800;
+  src: url("../fonts/opensans/OpenSans-Bold.woff2") format("woff2");
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .bg-img {
