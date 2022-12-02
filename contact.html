@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-<head>
-
+  <head>
     <!-- Metas -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta name="keywords" content="HTML5 Template Yumy onepage themeforest" />
-    <meta name="description" content="Yumy - Onepage Multi-Purpose HTML5 Template" />
+    <meta
+      name="description"
+      content="Yumy - Onepage Multi-Purpose HTML5 Template"
+    />
     <meta name="author" content="" />
 
     <!-- Title  -->
@@ -17,52 +21,34 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-
     <!-- Plugins -->
     <link rel="stylesheet" href="css/plugins.css" />
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
-
+  <body>
     <!-- ==================== Start Loading ==================== -->
 
-    <div id="preloader">
-    </div>
+    <div id="preloader"></div>
 
     <!-- ==================== End Loading ==================== -->
-
-
 
     <!-- ==================== Start progress-scroll-button ==================== -->
 
     <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
     </div>
 
     <!-- ==================== End progress-scroll-button ==================== -->
-
-
 
     <!-- ==================== Start cursor ==================== -->
 
@@ -71,27 +57,31 @@
 
     <!-- ==================== End cursor ==================== -->
 
-
-
     <!-- ==================== Start Navbar ==================== -->
 
     <nav class="navbar navbar-expand-lg bg-lit">
-        <div class="container">
+      <div class="container">
+        <!-- Logo -->
+        <a class="logo" href="index.html">
+          <img src="img/logo/logo-dark.png" alt="logo" />
+        </a>
 
-            <!-- Logo -->
-            <a class="logo" href="index.html">
-                <img src="img/logo/logo-dark.png" alt="logo">
-            </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar"><i class="fas fa-bars"></i></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"><i class="fas fa-bars"></i></span>
-            </button>
-
-            <!-- navbar links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item dropdown">
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                             aria-haspopup="true" aria-expanded="false">Home</a>
                         <div class="dropdown-menu">
@@ -99,262 +89,276 @@
                             <a class="dropdown-item" href="index2.html">Home <span class="playfont">II</span></a>
                         </div>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Über uns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
-                    </li>
-                </ul>
-                <div class="search">
-                    <span class="icon pe-7s-search cursor-pointer"></span>
-                    <div class="search-form text-center">
-                        <form>
-                            <input type="text" name="search" placeholder="Search">
-                        </form>
-                        <span class="close pe-7s-close cursor-pointer"></span>
-                    </div>
-                </div>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Über uns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html">Reservation</a>
+            </li>
+          </ul>
+          <div class="search">
+            <span class="icon pe-7s-search cursor-pointer"></span>
+            <div class="search-form text-center">
+              <form>
+                <input type="text" name="search" placeholder="Search" />
+              </form>
+              <span class="close pe-7s-close cursor-pointer"></span>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- ==================== End Navbar ==================== -->
 
-
-
     <!-- ==================== Start Slider ==================== -->
 
-    <header class="slider pages bg-img valign parallaxie" data-background="img/slid/0.jpg" data-overlay-dark="8">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-11">
-                    <div class="caption text-center bold">
-                        <h1>Contact Us</h1>
-                    </div>
-                </div>
+    <header
+      class="slider pages bg-img valign parallaxie"
+      data-background="img/slid/0.jpg"
+      data-overlay-dark="8"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-md-11">
+            <div class="caption text-center bold">
+              <h1>Contact Us</h1>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- ==================== End Slider ==================== -->
 
-
-
     <div class="main-content">
+      <!-- ==================== Start contact-us ==================== -->
 
-
-        <!-- ==================== Start contact-us ==================== -->
-
-        <section class="contact-us section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="map-info md-mb50">
-                            <div class="map-box">
-                                <div class="map" id="ieatmaps"></div>
-                            </div>
-                            <div class="con-info mt-30">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="item md-mb30">
-                                            <h4>Our Location</h4>
-                                            <ul>
-                                                <li>
-                                                    <span class="icon pe-7s-map-marker"></span>
-                                                    <small>
-                                                        <p>56 12th Ave, New York, NY 10011 ,</p>
-                                                        <p>71 Madison Ave 10013 New York</p>
-                                                    </small>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="item">
-                                            <h4>Contact Us</h4>
-                                            <ul>
-                                                <li>
-                                                    <span class="icon pe-7s-call"></span>
-                                                    <p>800-603-6035 , 914-309-7030</p>
-                                                </li>
-                                                <li>
-                                                    <span class="icon pe-7s-mail"></span>
-                                                    <p><a href="#0">mail@companyname.com</a></p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="opening bg-img bg-repeat" data-background="img/dotz.png">
-                            <div class="toup">
-                                <h6 class="scfont">Opening Times</h6>
-                                <h4>Check Availability</h4>
-                                <div class="open-hour">
-                                    <ul>
-                                        <li>Sunday to Tuesday <span>10:00 - 22:00</span></li>
-                                        <li>Friday to Saturday <span>12:00 - 19:00</span></li>
-                                    </ul>
-                                </div>
-                                <div class="mt-80">
-                                    <a href="#0" class="btn-skew btn-color btn-bg">
-                                        <span>Make a Reservation</span>
-                                        <i></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="contact-us section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="map-info md-mb50">
+                <div class="map-box">
+                  <div class="map" id="ieatmaps"></div>
                 </div>
-                <div class="row justify-content-center mt-100">
-                    <div class="col-lg-9 col-md-11">
-                        <div class="contact-form">
-
-                            <div class="sec-head text-center">
-                                <h6>Get In Touch</h6>
-                                <h3>Contact Us</h3>
-                                <span class="icon">
-                                    <i class="flaticon-cutlery-2"></i>
-                                </span>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="user-name" placeholder="Your Name *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" name="user-email" placeholder="Your Email *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" name="user-phone" placeholder="Phone Number *" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <select class="wide">
-                                            <option value="0">Subject</option>
-                                            <option value="1">Find A Table</option>
-                                            <option value="2">Upcoming Events</option>
-                                            <option value="3">Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea placeholder="Your Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="text-center">
-                                        <div class="form-group mb-0">
-                                            <button class="btn-skew btn-color btn-bg">
-                                                <span>Send Message</span>
-                                                <i></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="con-info mt-30">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item md-mb30">
+                        <h4>Our Location</h4>
+                        <ul>
+                          <li>
+                            <span class="icon pe-7s-map-marker"></span>
+                            <small>
+                              <p>56 12th Ave, New York, NY 10011 ,</p>
+                              <p>71 Madison Ave 10013 New York</p>
+                            </small>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <div class="col-md-6">
+                      <div class="item">
+                        <h4>Contact Us</h4>
+                        <ul>
+                          <li>
+                            <span class="icon pe-7s-call"></span>
+                            <p>800-603-6035 , 914-309-7030</p>
+                          </li>
+                          <li>
+                            <span class="icon pe-7s-mail"></span>
+                            <p><a href="#0">mail@companyname.com</a></p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- ==================== End contact-us ==================== -->
-
-
-
-        <!-- ==================== Start Footer ==================== -->
-
-        <footer class="main-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="ftop">
-                            <div class="flogo">
-                                <img src="img/logo/logo-dark.png" alt="logo">
-                            </div>
-                            <div class="social">
-                                <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#0"><i class="fab fa-twitter"></i></a>
-                                <a href="#0"><i class="fab fa-instagram"></i></a>
-                                <a href="#0"><i class="fab fa-vk"></i></a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-4">
+              <div
+                class="opening bg-img bg-repeat"
+                data-background="img/dotz.png"
+              >
+                <div class="toup">
+                  <h6 class="scfont">Opening Times</h6>
+                  <h4>Check Availability</h4>
+                  <div class="open-hour">
+                    <ul>
+                      <li>Sunday to Tuesday <span>10:00 - 22:00</span></li>
+                      <li>Friday to Saturday <span>12:00 - 19:00</span></li>
+                    </ul>
+                  </div>
+                  <div class="mt-80">
+                    <a href="#0" class="btn-skew btn-color btn-bg">
+                      <span>Make a Reservation</span>
+                      <i></i>
+                    </a>
+                  </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="item address md-mb50">
-                            <div class="ftitle">
-                                <h6>Kontaktieren Sie uns.</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="tit">Telefon :</div>
-                                    <div class="dots"></div> <span> X</span>
-                                </li>
-                                <li>
-                                    <div class="tit">Mail :</div>
-                                    <div class="dots"></div> <span>example@mail.com</span>
-                                </li>
-                                <li>
-                                    <div class="tit">Adresse :</div>
-                                    <div class="dots"></div> <span>Schlitters 58b, 6262 Schlitters</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="item opening md-mb50">
-                            <div class="ftitle">
-                                <h6>Öffnungszeiten</h6>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="tit">Montag - Freitag</div>
-                                    <div class="dots"></div> <span>09:00 - 22:00</span>
-                                </li>
-                                <li>
-                                    <div class="tit">Freitag - Sonntag</div>
-                                    <div class="dots"></div> <span>11:00 - 19:00</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="ftail">
-                <div class="container">
-                    <div class="copyrights text-center mt-0">
-                        <p>© 2022, Restaurant zum Senner. Made with love by <a href="https://visualy.at" target="_blank">visualy</a>.</p>
-                    </div>
+          </div>
+          <div class="row justify-content-center mt-100">
+            <div class="col-lg-9 col-md-11">
+              <div class="contact-form">
+                <div class="sec-head text-center">
+                  <h6>Get In Touch</h6>
+                  <h3>Contact Us</h3>
+                  <span class="icon">
+                    <i class="flaticon-cutlery-2"></i>
+                  </span>
                 </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="user-name"
+                        placeholder="Your Name *"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="user-email"
+                        placeholder="Your Email *"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="user-phone"
+                        placeholder="Phone Number *"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="wide">
+                        <option value="0">Subject</option>
+                        <option value="1">Find A Table</option>
+                        <option value="2">Upcoming Events</option>
+                        <option value="3">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="text-center">
+                      <div class="form-group mb-0">
+                        <button class="btn-skew btn-color btn-bg">
+                          <span>Send Message</span>
+                          <i></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
 
-        <!-- ==================== End Footer ==================== -->
+      <!-- ==================== End contact-us ==================== -->
 
+      <!-- ==================== Start Footer ==================== -->
 
+      <footer class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="ftop">
+                <div class="flogo">
+                  <img src="img/logo/logo-dark.png" alt="logo" />
+                </div>
+                <div class="social">
+                  <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#0"><i class="fab fa-twitter"></i></a>
+                  <a href="#0"><i class="fab fa-instagram"></i></a>
+                  <a href="#0"><i class="fab fa-vk"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="item address md-mb50">
+                <div class="ftitle">
+                  <h6>Kontaktieren Sie uns.</h6>
+                </div>
+                <ul>
+                  <li>
+                    <div class="tit">Telefon :</div>
+                    <div class="dots"></div>
+                    <span> X</span>
+                  </li>
+                  <li>
+                    <div class="tit">Mail :</div>
+                    <div class="dots"></div>
+                    <span>example@mail.com</span>
+                  </li>
+                  <li>
+                    <div class="tit">Adresse :</div>
+                    <div class="dots"></div>
+                    <span>Schlitters 58b, 6262 Schlitters</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item opening md-mb50">
+                <div class="ftitle">
+                  <h6>Öffnungszeiten</h6>
+                </div>
+                <ul>
+                  <li>
+                    <div class="tit">Montag - Freitag</div>
+                    <div class="dots"></div>
+                    <span>09:00 - 22:00</span>
+                  </li>
+                  <li>
+                    <div class="tit">Freitag - Sonntag</div>
+                    <div class="dots"></div>
+                    <span>11:00 - 19:00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ftail">
+          <div class="container">
+            <div class="copyrights text-center mt-0">
+              <p>
+                © 2022, Restaurant zum Senner. Made with love by
+                <a href="https://visualy.at" target="_blank">visualy</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ==================== End Footer ==================== -->
     </div>
-
-
-
-
-
 
     <!-- jQuery -->
     <script src="js/jquery-3.0.0.min.js"></script>
@@ -376,10 +380,10 @@
     <script src="js/map.js"></script>
 
     <!-- google map api -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30&callback=initMap">
-        </script>
-
-</body>
-
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe2q1gFSd75jKUnTDPq0nZWaMlEu6vL30&callback=initMap"
+    ></script>
+  </body>
 </html>

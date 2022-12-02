@@ -4201,6 +4201,51 @@ body {
   font-weight: 900;
   src: url("../fonts/barlow/Barlow-ExtraBold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 100;
+  src: url("../fonts/catamaran/Catamaran-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 200;
+  src: url("../fonts/catamaran/Catamaran-ExtraLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 300;
+  src: url("../fonts/catamaran/Catamaran-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 400;
+  src: url("../fonts/catamaran/Catamaran-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 500;
+  src: url("../fonts/catamaran/Catamaran-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 600;
+  src: url("../fonts/catamaran/Catamaran-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 700;
+  src: url("../fonts/catamaran/Catamaran-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 800;
+  src: url("../fonts/catamaran/Catamaran-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Catamaran";
+  font-weight: 900;
+  src: url("../fonts/catamaran/Catamaran-ExtraBold.woff2") format("woff2");
+}
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 991px) {
   .bg-img {
