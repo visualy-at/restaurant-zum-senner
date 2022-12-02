@@ -1,0 +1,18 @@
+.cafe-page {
+    .btn-skew {
+        ::after{
+            background: rgb(164, 70, 111);
+        }
+        ::before {
+            border-color: rgb(164, 70, 111);;
+        }
+    }
+
+    span.icon {
+        color: rgb(164, 70, 111) !important;
+    }
+
+    .sec-head h6 {
+        color: rgb(164, 70, 111);;
+    }
+}
