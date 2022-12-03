@@ -13,6 +13,13 @@
     }
 
     .sec-head h6 {
-        color: rgb(164, 70, 111);;
+        color: rgb(164, 70, 111);
+    }
+
+    .progress-wrap::after {
+            color: rgb(164, 70, 111);
+    }
+    .progress-wrap svg.progress-circle path {
+        stroke: rgb(164, 70, 111);
     }
 }

@@ -4700,5 +4700,11 @@ body {
 .cafe-page .sec-head h6 {
   color: rgb(164, 70, 111);
 }
+.cafe-page .progress-wrap::after {
+  color: rgb(164, 70, 111);
+}
+.cafe-page .progress-wrap svg.progress-circle path {
+  stroke: rgb(164, 70, 111);
+}
 
 /*# sourceMappingURL=style.css.map */
