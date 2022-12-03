@@ -9,6 +9,11 @@
   list-style: none;
 }
 
+.pace-progress,
+.pace-activity {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
   @media (max-width: 500px) {

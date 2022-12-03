@@ -57,6 +57,11 @@
   list-style: none;
 }
 
+.pace-progress,
+.pace-activity {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
