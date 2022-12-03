@@ -60,6 +60,11 @@
 html {
   scroll-behavior: smooth;
 }
+@media (max-width: 500px) {
+  html {
+    overflow-x: hidden !important;
+  }
+}
 
 body {
   color: #343332;
@@ -4399,9 +4404,6 @@ body {
   .navbar-nav .dropdown-menu.show {
     display: block;
   }
-  .navbar .navbar-nav .nav-link {
-    padding: 0;
-  }
   .navbar .navbar-nav .nav-link:hover {
     color: #b7b095;
   }
@@ -4665,7 +4667,10 @@ body {
 .dark p {
   color: #babbbb;
 }
-.dark h1, .dark h2, .dark h3, .dark h4 {
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4 {
   margin: 0;
   line-height: 1.4;
   font-weight: 500;
