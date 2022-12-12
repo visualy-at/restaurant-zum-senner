@@ -2722,7 +2722,7 @@ footer a {
   right: 15px;
   bottom: 15px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 3;
+  z-index: 0;
 }
 .contact-us .opening:before {
   top: 20px;
@@ -2951,7 +2951,8 @@ footer a {
 .ui-state-default a:visited,
 a.ui-button,
 a:link.ui-button,
-a:visited.ui-button, .ui-button {
+a:visited.ui-button,
+.ui-button {
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -2966,7 +2967,8 @@ a:visited.ui-button, .ui-button {
   background: transparent;
 }
 
-.ui-datepicker td span, .ui-datepicker td a {
+.ui-datepicker td span,
+.ui-datepicker td a {
   text-align: center;
 }
 
@@ -2979,7 +2981,9 @@ html .ui-button.ui-state-disabled:active {
   background: transparent;
 }
 
-.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
   background: #b7b095;
 }
 
