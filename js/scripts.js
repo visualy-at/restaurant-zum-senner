@@ -23,6 +23,8 @@ $(function () {
   //         logo.attr('src', 'img/logo-light.png');
   //     }
   // });
+  
+  alert("Liebe Gäste, unser Restaurant ist derzeit bis zum 7. Dezember geschlossen. Wir freuen uns darauf, euch danach wieder mit frischen Gerichten und gewohntem Service willkommen zu heißen! Bis bald und bleibt gesund!");
 
   $(".navbar .search .icon").on("click", function () {
     $(".navbar .search .search-form").fadeIn();
